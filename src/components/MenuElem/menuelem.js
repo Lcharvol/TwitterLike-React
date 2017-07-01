@@ -9,7 +9,7 @@ class MenuElem extends Component {
   }
 
   static defaultProps = {
-    name: '',
+    name: 'Undefined',
   }
 
   state = {
@@ -27,7 +27,7 @@ class MenuElem extends Component {
   }
 
   render () {
-    const { name } = this.props;
+    const { name, icon } = this.props;
     const { focus } = this.state;
 
     return (

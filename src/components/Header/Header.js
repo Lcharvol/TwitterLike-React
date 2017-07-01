@@ -5,14 +5,22 @@ import MenuElem from '../MenuElem';
 
 class Header extends Component {
   state = {
+    searchFocus: true,
+  }
+
+  handleSearchFocus = () => {
 
   }
+
   render () {
+    const { searchFocus } = this.state;
+
     return (
       <div className="header">
         <div className="menu">
-          <div className="searchbox">
-            <i className="fa fa-search fa-2x loupe" aria-hidden="true"></i>
+          <div className="searchBox">
+            <i className="fa fa-search fa-2x icon" aria-hidden="true"></i>
+            {searchFocus && <div className="searchBoxFooter"/>}
           </div>
           <MenuElem
               name="En vedette"
@@ -24,7 +32,6 @@ class Header extends Component {
             name="Politique"
           />
           <MenuElem
-            name="Musique"
           />
         </div>
       </div>

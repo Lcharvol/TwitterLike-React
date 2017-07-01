@@ -9,6 +9,7 @@
   cursor: pointer;
 }
 .menuElem h1 {
+  display: inline-block;
   color: rgb(75,75,75);
   margin-top: 20px;
   font-size:1.3em;
