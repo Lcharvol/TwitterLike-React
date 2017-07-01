@@ -5,11 +5,17 @@ import MenuElem from '../MenuElem';
 
 class Header extends Component {
   state = {
-    searchFocus: true,
+    searchFocus: false,
   }
 
   handleSearchFocus = () => {
+    const { searchFocus } = this.state;
 
+    if (searchFocus === false) {
+      this.setState( { searchFocus: true} );
+    } else {
+      this.setState( { searchFocus: false} );
+    }
   }
 
   render () {
@@ -18,7 +24,11 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="menu">
-          <div className="searchBox">
+          <div
+          className="searchBox"
+          onMouseLeave={this.handleSearchFocus}
+          onMouseEnter={this.handleSearchFocus}
+          >
             <i className="fa fa-search fa-2x icon" aria-hidden="true"></i>
             {searchFocus && <div className="searchBoxFooter"/>}
           </div>
