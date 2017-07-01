@@ -1,0 +1,21 @@
+.menuElem
+{
+  display: inline-block;
+  height:70px;
+  width:200px;
+  border-right: solid  1px rgb(200,200,200);
+  text-align: center;
+}
+.menuElem h1 {
+  color: rgb(35,35,35);
+  margin-top: 20px;
+  font-size:1.3em;
+}
+.menuElemFooter
+{
+  position: absolute;
+  background-image: linear-gradient( 135deg, #CE9FFC 0%, #7367F0 100%);
+  bottom: 0;
+  height:5px;
+  width:200px;
+}
