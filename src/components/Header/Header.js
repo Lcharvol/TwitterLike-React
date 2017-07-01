@@ -11,6 +11,9 @@ class Header extends Component {
     return (
       <div className="header">
         <div className="menu">
+          <div className="searchbox">
+            <i className="fa fa-search fa-2x loupe" aria-hidden="true"></i>
+          </div>
           <MenuElem
               name="En vedette"
           />
