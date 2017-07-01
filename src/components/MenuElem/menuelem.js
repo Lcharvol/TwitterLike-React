@@ -8,6 +8,10 @@ class MenuElem extends Component {
     name: PropTypes.string.isRequired,
   }
 
+  static defaultProps = {
+    name: '',
+  }
+
   state = {
     focus: false,
   }
