@@ -79,9 +79,14 @@
 .tweettext
 {
   position: relative;
-  width:100%;
   text-align: left;
   padding-left: 15px;
+  padding-right: 15px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 .tweetfooter
 {
