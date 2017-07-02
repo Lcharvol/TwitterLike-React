@@ -12,12 +12,16 @@ class TweetElem extends Component {
         <div className="tweetimgcontainers">
           <img className="tweetimg" src={img}/>
         </div>
-        <div>
+        <div className="userbox">
           <div className="userimgcontainers">
             <img className="userimg" src={userimg}/>
           </div>
-          <p>{text}</p>
+          <p className="username">{username}</p><br />
+          <p className="hashtag">@{username}</p>
+          <p className="date" >{date}</p>
         </div>
+        <p>{text}</p>
+        <p>{date}</p>
       </div>
     );
   };

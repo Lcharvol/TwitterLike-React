@@ -5,7 +5,7 @@
   height:250px;
   margin-bottom:45px;
   text-align: center;
-  background-image: linear-gradient( 135deg, #43CBFF 0%, #9708CC 100%);
+  background-image: linear-gradient( 135deg, #43CBFF -50%, #9708CC 150%);
   box-shadow:
     inset 0 7em 10em -5em rgba(255,255,255,0.3),
     0 0.3em 0.5em -0.2em rgba(150,150,100,0.1),
@@ -33,8 +33,8 @@
 }
 .searchBoxFooter
 {
-position: absolute;
-  background-image: linear-gradient( 135deg, #43CBFF 0%, #9708CC 100%);
+  position: absolute;
+  background-image: linear-gradient( 135deg, #43CBFF -50%, #9708CC 150%);
   bottom: 0;
   height:6px;
   width:100px;
@@ -42,7 +42,7 @@ position: absolute;
 .icon
 {
   display: inline-block;
-  background-image: linear-gradient( 135deg, #43CBFF 0%, #9708CC 100%);
+  background-image: linear-gradient( 135deg, #43CBFF -50%, #9708CC 150%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   margin-top:15px;
