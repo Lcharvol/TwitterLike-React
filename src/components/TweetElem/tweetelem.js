@@ -22,7 +22,7 @@ class TweetElem extends Component {
         </div>
         <p className="tweettext">{text}</p>
         <div className="tweetfooter">
-          <i className="fa fa-comment-o tweetfooterpicto" aria-hidden="true"></i>
+          <i className="fa fa-comment-o fa tweetfooterpicto" aria-hidden="true"></i>
           <i className="fa fa-retweet tweetfooterpicto" aria-hidden="true"></i>
           <i className="fa fa-heart-o tweetfooterpicto" aria-hidden="true"></i>
         </div>

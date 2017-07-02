@@ -5,7 +5,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'divertissement',
+    categories: 'Divertissement',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
@@ -13,7 +13,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'divertissement',
+    categories: 'Divertissement',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/287.jpg',
@@ -21,7 +21,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'politique',
+    categories: 'Politique',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/140.jpg',
@@ -29,7 +29,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'divertissement',
+    categories: 'Divertissement',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/138.jpg',
@@ -37,7 +37,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'politique',
+    categories: 'Politique',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/139.jpg',
@@ -45,7 +45,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'politique',
+    categories: 'Politique',
   },
 ];
 

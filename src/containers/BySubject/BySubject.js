@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 
 import Header from '../../components/Header';
 import Accueil from '../Accueil';
-import { list } from '../../Constants';
 import './Bysubject.css';
 
 class Bysubject extends Component {
@@ -15,7 +14,7 @@ class Bysubject extends Component {
 
   render() {
     const { params } = this.props;
-
+  
     return (
       <div className="homepage">
         <Header />

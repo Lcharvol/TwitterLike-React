@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import './menuelem.css'
+import { IndexLink, Link } from "react-router";
 
 class MenuElem extends Component {
 
@@ -31,13 +32,15 @@ class MenuElem extends Component {
     const { focus } = this.state;
 
     return (
+      <Link to={name}>
       <div className="menuElem"
         onMouseLeave={this.handleChangeFocus}
         onMouseEnter={this.handleChangeFocus}
       >
-        <h1>{name}</h1>
+      <h1>{name}</h1>
         { focus && <div className="menuElemFooter"/> }
       </div>
+      </Link>
     );
   };
 }
