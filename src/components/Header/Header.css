@@ -5,8 +5,9 @@
   height:250px;
   margin-bottom:5px;
   text-align: center;
+  padding-right: 30px;
   background-image: linear-gradient( 135deg, #43CBFF -50%, #9708CC 150%);
-  overflow: hidden;
+
   box-shadow:
     inset 0 7em 10em -5em rgba(255,255,255,0.3),
     0 0.3em 0.5em -0.2em rgba(150,150,100,0.1),
@@ -55,4 +56,34 @@
   left:-0.2em;
   top:-0.2em;
   font-size: 20em;
+}
+.Button
+{
+  position: relative;
+  margin-right: 25px;
+  margin-top: 20px;
+  float:right;
+  width:110px;
+  height:30px;
+  background-color: none;
+  border: solid 1.5px white;
+  border-radius: 150px;
+}
+.Button:hover{
+  background-color: white;
+}
+.Button:hover p{
+  color:#9708CC;
+}
+.Button p
+{
+  color:white;
+  margin-top:5px;;
+  font-size:0.9em;
+  cursor: pointer;
+}
+.menumain
+{
+  display: inline-block;
+  width:80%;
 }

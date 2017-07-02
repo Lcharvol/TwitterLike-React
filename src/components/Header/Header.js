@@ -6,6 +6,7 @@ import MenuElem from '../MenuElem';
 class Header extends Component {
   state = {
     searchFocus: false,
+    searchState: true,
   }
 
   handleSearchFocus = () => {
@@ -18,32 +19,45 @@ class Header extends Component {
     }
   }
 
+  handleChangeSearch = () => {
+    const { searchState } = this.state;
+
+    if (searchState === false) {
+      this.setState( { searchState: true} );
+    } else {
+      this.setState( { searchState: false} );
+    }
+  }
+
   render () {
-    const { searchFocus } = this.state;
+    const { searchFocus, searchState } = this.state;
 
     return (
       <div className="header">
         <i className="fa fa-globe fa-6 logo" aria-hidden="true"></i>
+        <div className="Button">
+          <p>Register</p>
+        </div>
+        <div className="Button">
+          <p>Login</p>
+        </div>
         <div className="menu">
           <div
           className="searchBox"
+          onClick={this.handleChangeSearch}
           onMouseLeave={this.handleSearchFocus}
           onMouseEnter={this.handleSearchFocus}
           >
             <i className="fa fa-search fa-2x icon" aria-hidden="true"></i>
             {searchFocus && <div className="searchBoxFooter"/>}
           </div>
-          <MenuElem
-              name="En vedette"
-          />
-          <MenuElem
-            name="Divertissement"
-          />
-          <MenuElem
-            name="Politique"
-          />
-          <MenuElem
-          />
+          {searchState &&
+          <div className="menumain">
+            <MenuElem name="En vedette" />
+            <MenuElem name="Divertissement" />
+            <MenuElem name="Politique" />
+            <MenuElem name="Musique"/>
+          </div>}
         </div>
       </div>
     );

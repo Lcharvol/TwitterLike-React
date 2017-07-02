@@ -37,7 +37,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'Politique',
+    categories: 'Musique',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/139.jpg',
@@ -69,7 +69,7 @@ const tweets = [
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
-    categories: 'Politique',
+    categories: 'Musique',
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/140.jpg',

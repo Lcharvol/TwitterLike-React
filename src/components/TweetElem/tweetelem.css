@@ -1,6 +1,5 @@
 .tweetElem
 {
-  position: relative;
   float:left;
   width: 300px;
   border-radius: 10px;
@@ -92,6 +91,7 @@
 {
   position: relative;
   width:100%;
+  text-align: center;
 }
 .tweetfooterpicto
 {
