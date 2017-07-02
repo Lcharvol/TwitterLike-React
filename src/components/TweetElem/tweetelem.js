@@ -20,8 +20,12 @@ class TweetElem extends Component {
           <p className="hashtag">@{username}</p>
           <p className="date" >{date}</p>
         </div>
-        <p>{text}</p>
-        <p>{date}</p>
+        <p className="tweettext">{text}</p>
+        <div className="tweetfooter">
+          <i className="fa fa-comment-o tweetfooterpicto" aria-hidden="true"></i>
+          <i className="fa fa-retweet tweetfooterpicto" aria-hidden="true"></i>
+          <i className="fa fa-heart-o tweetfooterpicto" aria-hidden="true"></i>
+        </div>
       </div>
     );
   };

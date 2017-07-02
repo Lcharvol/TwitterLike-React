@@ -19,7 +19,9 @@ class Bysubject extends Component {
     return (
       <div className="homepage">
         <Header />
-        <h1>{params.subject}</h1>
+        <Accueil
+          categories={params.subject}
+        />
       </div>
     );
   }

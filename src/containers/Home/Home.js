@@ -14,7 +14,9 @@ class Home extends Component {
     return (
       <div className="homepage">
         <Header />
-        <Accueil />
+        <Accueil
+          categories="politique"
+        />
       </div>
     );
   }

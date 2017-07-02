@@ -23,7 +23,7 @@ class Header extends Component {
 
     return (
       <div className="header">
-        <i class="fa fa-globe" aria-hidden="true"></i>
+        <i className="fa fa-globe fa-6 logo" aria-hidden="true"></i>
         <div className="menu">
           <div
           className="searchBox"
