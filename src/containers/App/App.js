@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react';
 
-import Home from '../../containers/Home';
-
 import './App.css';
 
 const App = ({ children }) =>

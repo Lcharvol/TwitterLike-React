@@ -2,17 +2,16 @@ import React from 'react';
 
 import './Accueil.css';
 import TweetElem from '../../components/TweetElem';
+import {tweets} from '../../Constants';
 
 const Acceuil = () => (
   <div className="Accueil">
-    <TweetElem />
-    <TweetElem />
-    <TweetElem />
-    <TweetElem />
-    <TweetElem />
-    <TweetElem />
-    <TweetElem />
-    <TweetElem />
+    {tweets.map((tweet, index) => (
+        <TweetElem
+          key={index}
+          {...tweet}
+        />
+    ))}
   </div>
 );
 

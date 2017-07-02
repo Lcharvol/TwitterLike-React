@@ -1,5 +1,5 @@
-import list from './list';
+import tweets from './tweets';
 
 export {
-  list,
+  tweets,
 };
