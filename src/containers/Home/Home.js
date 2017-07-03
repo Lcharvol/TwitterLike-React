@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../../components/Header';
 import Accueil from '../Accueil';
+import TweetBox from '../../components/TweetBox';
 import { list } from '../../Constants';
 import './Home.css';
 
@@ -15,6 +16,7 @@ class Home extends Component {
     return (
       <div className="homepage">
         <Header />
+        <TweetBox />
         <Accueil
           categories="politique"
         />

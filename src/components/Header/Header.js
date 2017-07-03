@@ -53,10 +53,22 @@ class Header extends Component {
           </div>
           {searchState &&
           <div className="menumain">
-            <MenuElem name="En vedette" />
-            <MenuElem name="Divertissement" />
-            <MenuElem name="Politique" />
-            <MenuElem name="Musique"/>
+            <MenuElem
+              name="Acceuil"
+              link="/"
+            />
+            <MenuElem
+              name="Divertissement"
+              link="Divertissement"
+            />
+            <MenuElem
+              name="Politique"
+              link="Politique"
+            />
+            <MenuElem
+              name="Musique"
+              link="Musique"
+            />
           </div>}
         </div>
       </div>

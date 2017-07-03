@@ -7,10 +7,12 @@ class MenuElem extends Component {
 
   static PropTypes = {
     name: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
     name: 'Undefined',
+    link: '',
   }
 
   state = {
@@ -28,11 +30,11 @@ class MenuElem extends Component {
   }
 
   render () {
-    const { name, icon } = this.props;
+    const { name, icon, link } = this.props;
     const { focus } = this.state;
 
     return (
-      <Link to={name}>
+      <Link to={link}>
       <div className="menuElem"
         onMouseLeave={this.handleChangeFocus}
         onMouseEnter={this.handleChangeFocus}
