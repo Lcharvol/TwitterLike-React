@@ -13,9 +13,9 @@ class Header extends Component {
     const { searchFocus } = this.state;
 
     if (searchFocus === false) {
-      this.setState( { searchFocus: true} );
+      this.setState({ searchFocus: true });
     } else {
-      this.setState( { searchFocus: false} );
+      this.setState({ searchFocus: false });
     }
   }
 
@@ -23,18 +23,18 @@ class Header extends Component {
     const { searchState } = this.state;
 
     if (searchState === false) {
-      this.setState( { searchState: true} );
+      this.setState({ searchState: true });
     } else {
-      this.setState( { searchState: false} );
+      this.setState({ searchState: false });
     }
   }
 
-  render () {
+  render() {
     const { searchFocus, searchState } = this.state;
 
     return (
       <div className="header">
-        <i className="fa fa-globe fa-6 logo" aria-hidden="true"></i>
+        <i className="fa fa-globe fa-6 logo" aria-hidden="true" />
         <div className="Button">
           <p>Register</p>
         </div>
@@ -43,13 +43,13 @@ class Header extends Component {
         </div>
         <div className="menu">
           <div
-          className="searchBox"
-          onClick={this.handleChangeSearch}
-          onMouseLeave={this.handleSearchFocus}
-          onMouseEnter={this.handleSearchFocus}
+            className="searchBox"
+            onClick={this.handleChangeSearch}
+            onMouseLeave={this.handleSearchFocus}
+            onMouseEnter={this.handleSearchFocus}
           >
-            <i className="fa fa-search fa-2x icon" aria-hidden="true"></i>
-            {searchFocus && <div className="searchBoxFooter"/>}
+            <i className="fa fa-search fa-2x icon" aria-hidden="true" />
+            {searchFocus && <div className="searchBoxFooter" />}
           </div>
           {searchState &&
           <div className="menumain">
@@ -74,6 +74,6 @@ class Header extends Component {
       </div>
     );
   }
-};
+}
 
 export default Header;

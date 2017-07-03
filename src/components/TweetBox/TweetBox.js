@@ -9,12 +9,11 @@ class TweetBox extends Component {
     value: '',
   }
 
-  handleChangeTweet = ({target: {value}}) => {
-    this.setState({value: value});
+  handleChangeTweet = ({ target: { value } }) => {
+    this.setState({ value });
   }
 
-  render () {
-
+  render() {
     const { value } = this.state;
 
     return (
@@ -22,6 +21,8 @@ class TweetBox extends Component {
         <textarea
           spellCheck="false"
           className="TweetBoxText"
+          placeholder="Type your Tweet here..."
+          value={value}
           onChange={this.handleChangeTweet}
         />
         <p className="counter">{140 - value.length} carateres restants</p>
