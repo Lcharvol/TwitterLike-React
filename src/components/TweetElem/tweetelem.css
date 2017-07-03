@@ -1,9 +1,9 @@
 .tweetElem
 {
-  float:left;
   width: 300px;
   border-radius: 10px;
   background-color: white;
+  margin:0;
   margin:20px;
   padding-bottom: 10px;
   box-shadow:
