@@ -15,7 +15,6 @@ class Home extends Component {
     return (
       <div className="homepage">
         <Header />
-        <div className="HomeHeader" />
         <Accueil />
       </div>
     );

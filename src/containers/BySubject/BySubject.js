@@ -21,12 +21,14 @@ class Bysubject extends Component {
     return (
       <div className="homepage">
         <Header />
-        {tweets.map((tweet, index) => tweet.categories === params.subject && (
+        <div className="TweetContainers">
+          {tweets.map((tweet, index) => tweet.categories === params.subject && (
           <TweetElem
             key={index}
             {...tweet}
           />
         ))}
+        </div>
       </div>
     );
   }
