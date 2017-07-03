@@ -18,8 +18,8 @@ class Home extends Component {
       <div className="homepage">
         <Header />
         <div className="HomeHeader">
-          <TweetBox />
           <ProfilBox />
+          <TweetBox />
         </div>
         <Accueil />
       </div>

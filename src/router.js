@@ -11,6 +11,6 @@ export default (
     <IndexRoute component={Home} />
     <Route path="404" component={Page404} />
     <Route path="/:subject" component={Bysubject} />
-    <Redirect from="*" to ="404" />
+    <Redirect from="*" to="404" />
   </Route>
 );

@@ -13,6 +13,14 @@ class TweetBox extends Component {
     this.setState({ value });
   }
 
+  handleAddTweet = () => {
+    const { value } = this.state;
+
+    if (value.length && value.length > 140) {
+      this.setState({ value: '' });
+    }
+  }
+
   render() {
     const { value } = this.state;
 
@@ -20,17 +28,19 @@ class TweetBox extends Component {
       <div className="TweetBox">
         <textarea
           spellCheck="false"
-          className="TweetBoxText"
+          className={value.length > 140 ? 'TweetBoxText false' : 'TweetBoxText'}
           placeholder="Type your Tweet here..."
           value={value}
           onChange={this.handleChangeTweet}
         />
         <p className="counter">{140 - value.length} carateres restants</p>
-        <input
-          type="submit"
+        <button
+          type="button"
+          disabled={!value.length || value.length > 140}
           value="Tweet"
           className="TweetButton"
-        />
+          onClick={this.handleAddTweet}
+        >Tweet</button>
       </div>
     );
   }

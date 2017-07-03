@@ -3,8 +3,6 @@
   display: inline-block;
   width:500px;
   background-color:white;
-  margin-left: 20px;
-  margin-bottom: 50px;
   border-radius: 5px;
   text-align: center;
   box-shadow:
@@ -16,8 +14,6 @@
 }
 .TweetBoxText
 {
-  position: relative;
-  margin: auto;
   margin-top:10px;
   width:94%;
   height:70px;
@@ -29,6 +25,7 @@
   border: none;
   box-shadow: inset 5px 5px 10px 0px rgba(155,155,155,0.2);
   padding:5px;
+  transition: all 0.7s;
 }
 .TweetBoxText:focus
 {
@@ -36,7 +33,6 @@
 }
 .TweetButton
 {
-  position: relative;
   margin-top:25px;
   margin-bottom: 25px;
   background-image: linear-gradient( 135deg, #43CBFF -50%, #9708CC 150%);
@@ -48,15 +44,22 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.TweetButton:disabled
+{
+  background-image: linear-gradient( 135deg, rgba(67, 203, 255, 0.3) -50%, rgba(151, 8, 204, 0.3) 150%);
+}
 .TweetButton:focus
 {
   outline: none;
 }
 .counter
 {
-  position: relative;
   width:95%;
   text-align: right;
   margin:auto;
   margin-top:5px;
+}
+.false
+{
+  background-color: rgba(231, 76, 60,0.3);
 }
