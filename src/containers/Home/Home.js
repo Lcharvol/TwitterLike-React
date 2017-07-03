@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import Header from '../../components/Header';
 import Accueil from '../Accueil';
-import TweetBox from '../../components/TweetBox';
-import ProfilBox from '../../components/ProfilBox';
 import { list } from '../../Constants';
 import './Home.css';
 
@@ -17,10 +15,7 @@ class Home extends Component {
     return (
       <div className="homepage">
         <Header />
-        <div className="HomeHeader">
-          <ProfilBox />
-          <TweetBox />
-        </div>
+        <div className="HomeHeader" />
         <Accueil />
       </div>
     );

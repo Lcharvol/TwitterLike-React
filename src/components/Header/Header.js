@@ -57,6 +57,7 @@ class Header extends Component {
             <i className="fa fa-search fa-2x icon" aria-hidden="true" />
             {searchFocus && <div className="searchBoxFooter" />}
           </div>
+          {!searchState && <div className="searchBar" />}
           {searchState &&
           <div className="menumain">
             <MenuElem

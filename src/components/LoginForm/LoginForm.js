@@ -15,12 +15,12 @@ class LoginForm extends Component {
           <h1>Log in to Twitter</h1>
           <form onSubmit={this.handleSubmit}>
             <label>
-              <textarea value={this.state.value} onChange={this.handleChange} />
+              <textarea className="inputLogin" value={this.state.value} onChange={this.handleChange} />
             </label>
             <label>
-              <textarea value={this.state.value} onChange={this.handleChange} />
+              <textarea className="inputLogin" value={this.state.value} onChange={this.handleChange} />
             </label>
-            <input type="submit" value="Submit" />
+            <input className="LoginFormSubmit" type="submit" value="Submit" />
           </form>
         </div>
         <div className="LoginFormFooter" />
