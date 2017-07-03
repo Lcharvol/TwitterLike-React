@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
-import './menuelem.css'
-import { IndexLink, Link } from "react-router";
+import './menuelem.css';
+import { IndexLink, Link } from 'react-router';
 
 class MenuElem extends Component {
 
@@ -23,28 +23,30 @@ class MenuElem extends Component {
     const { focus } = this.state;
 
     if (focus === false) {
-      this.setState( { focus: true} );
+      this.setState({ focus: true });
     } else {
-      this.setState( { focus: false} );
+      this.setState({ focus: false });
     }
   }
 
-  render () {
+  render() {
     const { name, icon, link } = this.props;
     const { focus } = this.state;
 
     return (
       <Link to={link}>
-      <div className="menuElem"
-        onMouseLeave={this.handleChangeFocus}
-        onMouseEnter={this.handleChangeFocus}
-      >
-      <h1>{name}</h1>
-        { focus && <div className="menuElemFooter"/> }
-      </div>
+        <div
+          role="menuitem"
+          className="menuElem"
+          onMouseLeave={this.handleChangeFocus}
+          onMouseEnter={this.handleChangeFocus}
+        >
+          <h1>{name}</h1>
+          {focus && <div className="menuElemFooter" />}
+        </div>
       </Link>
     );
-  };
+  }
 }
 
 export default MenuElem;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { IndexLink, Link } from 'react-router';
 
 import './Header.css';
+
 import MenuElem from '../MenuElem';
 
 class Header extends Component {
@@ -35,12 +37,16 @@ class Header extends Component {
     return (
       <div className="header">
         <i className="fa fa-globe fa-6 logo" aria-hidden="true" />
-        <div className="Button">
-          <p>Register</p>
-        </div>
-        <div className="Button">
-          <p>Login</p>
-        </div>
+        <Link to="Register">
+          <div className="Button">
+            <p>Register</p>
+          </div>
+        </Link>
+        <Link to="Login">
+          <div className="Button">
+            <p>Login</p>
+          </div>
+        </Link>
         <div className="menu">
           <div
             className="searchBox"

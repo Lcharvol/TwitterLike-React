@@ -1,0 +1,30 @@
+.LoginForm
+{
+  position: relative;
+  width:835px;
+  height:330px;
+  background-color: white;
+  margin:auto;
+  margin-top:25px;
+  box-shadow: 0 0 225px rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.LoginFormFooter
+{
+  position: relative;
+  width:100%;
+  height:100px;
+  color:#657786;
+  background-color: #f4f4f4;
+}
+.mainLoginForm
+{
+  position: relative;
+  width:100%;
+  height:230px;
+  color:rgb(25,25,25)l
+}
+.mainLoginForm
+{
+  margin-left:25px;
+}

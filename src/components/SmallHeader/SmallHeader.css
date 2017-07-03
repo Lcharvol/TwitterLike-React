@@ -1,0 +1,14 @@
+.SmallHeader
+{
+  position: relative;
+  width:100%;
+  background-image: linear-gradient( 135deg, #43CBFF -50%, #9708CC 150%);
+  height:50px;
+  box-shadow: 0 0 225px rgba(255,255,255,0.55);
+}
+.smallglobe
+{
+  color: white;
+  margin-top:9px;
+  margin-left: 5vw;
+}
