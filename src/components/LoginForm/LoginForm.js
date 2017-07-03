@@ -15,7 +15,9 @@ class LoginForm extends Component {
           <h1>Log in to Twitter</h1>
           <form onSubmit={this.handleSubmit}>
             <label>
-              Name:
+              <textarea value={this.state.value} onChange={this.handleChange} />
+            </label>
+            <label>
               <textarea value={this.state.value} onChange={this.handleChange} />
             </label>
             <input type="submit" value="Submit" />
