@@ -1,15 +1,11 @@
 .menuElem
 {
-  display: inline-block;
   height:70px;
-  padding-right:30px;
-  padding-left:30px;
   border-right: solid  1px rgb(200,200,200);
   text-align: center;
   cursor: pointer;
 }
 .menuElem h1 {
-  display: inline-block;
   color: rgb(75,75,75);
   margin-top: 20px;
   font-size:1.3em;

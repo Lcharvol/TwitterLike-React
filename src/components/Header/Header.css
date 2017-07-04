@@ -16,7 +16,7 @@
 }
 .menu
 {
-  position: absolute;
+  display: flex;
   bottom: 0;
   background-color: white;
   width:100%;

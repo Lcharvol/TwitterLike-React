@@ -23,7 +23,11 @@ class LoginForm extends Component {
             <input className="LoginFormSubmit" type="submit" value="Submit" />
           </form>
         </div>
-        <div className="LoginFormFooter" />
+        <div className="LoginFormFooter">
+          <p>New to Twitter?</p><a> Sign up now »</a>
+
+          <p>Already using Twitter via text message? Activate your account »</p>
+        </div>
       </div>
     );
   }
