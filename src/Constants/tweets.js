@@ -9,7 +9,7 @@ const tweets = [
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor augue, bibendum eu erat eget, pharetra congue enim. Ut fringilla sapien ut metus sollicitudin aliquet. Etiam non rutrum enim. Sed sit amet convallis felis, ut pulvinar enim. Quisque elementum justo quis purus bibendum, eget efficitur lacus fermentum. Maecenas fringilla urna eu odio vehicula, quis ultrices tortor consectetur. Donec vitae est mi.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor augue, ',
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
@@ -57,7 +57,7 @@ const tweets = [
   },
   {
     img: 'http://placekitten.com.s3.amazonaws.com/homepage-samples/200/286.jpg',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor augue, bibendum eu erat eget, pharetra congue enim. Ut fringilla sapien ut metus sollicitudin aliquet. Etiam non rutrum enim. Sed sit amet convallis felis, ut pulvinar enim. Quisque elementum justo quis purus bibendum, eget efficitur lacus fermentum. Maecenas fringilla urna eu odio vehicula, quis ultrices tortor consectetur. Donec vitae est mi.',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tortor augue',
     username: 'Lucas Charvolin',
     userimg: 'https://cdn.intra.42.fr/users/medium_lcharvol.jpg',
     date: '2 July',
